@@ -1,0 +1,96 @@
+gpus: [PhysicalDevice(name='/physical_device:GPU:0', device_type='GPU')]
+Successfully Load Dataset and Poisoned Model
+
+systemMemory: 16.00 GB
+maxCacheSize: 5.33 GB
+
+313/313 [==============================] - 1s 4ms/step
+313/313 [==============================] - 1s 4ms/step
+313/313 [==============================] - 1s 4ms/step
+model clean classification_accuracy: 0.86
+Embedding Shape: (50000, 5000)
+Cluster: 0
+/Users/audreychinara/miniconda3/envs/fit3183-forensics/lib/python3.8/site-packages/sklearn/cluster/_kmeans.py:1930: FutureWarning: The default value of `n_init` will change from 3 to 'auto' in 1.4. Set the value of `n_init` explicitly to suppress the warning
+  super()._check_params_vs_input(X, default_n_init=3)
+********************************************************************************
+Current Backdoor Ratio: 0.000, consist 0.000 of all backdoor, 24756 images
+Rest Backdoor Ratio: 0.0195, consist 1.0000 of all backdoor
+8/8 [==============================] - 0s 18ms/step
+8/8 [==============================] - 0s 5ms/step
+1/1 [==============================] - 0s 136ms/step
+8/8 [==============================] - 0s 5ms/step
+/Users/audreychinara/miniconda3/envs/fit3183-forensics/lib/python3.8/site-packages/keras/optimizers/optimizer_v2/gradient_descent.py:111: UserWarning: The `lr` argument is deprecated, use `learning_rate` instead.
+  super().__init__(name, **kwargs)
+1/1 [==============================] - 0s 16ms/step
+8/8 [==============================] - 0s 4ms/step
+Unlearn ACC: 0.99 - Rest ACC: 1.00
+0 Unlearn L: 9.9247 - Rest L: 0.0116
+Attack Confidence: 1.00 - Normal Acc: 0.86 Attack Loss: 0.00 - Normal Loss: 0.47
+
+1/1 [==============================] - 0s 13ms/step
+8/8 [==============================] - 0s 4ms/step
+Unlearn ACC: 0.99 - Rest ACC: 1.00
+19 Unlearn L: 7.3307 - Rest L: 0.0142
+Attack Confidence: 1.00 - Normal Acc: 0.88 Attack Loss: 0.00 - Normal Loss: 0.45
+
+1/1 [==============================] - 0s 13ms/step
+8/8 [==============================] - 0s 4ms/step
+Unlearn ACC: 0.77 - Rest ACC: 1.00
+38 Unlearn L: 4.5754 - Rest L: 0.0098
+Attack Confidence: 1.00 - Normal Acc: 0.82 Attack Loss: 0.00 - Normal Loss: 0.68
+
+1/1 [==============================] - 0s 16ms/step
+8/8 [==============================] - 0s 4ms/step
+Unlearn ACC: 0.14 - Rest ACC: 1.00
+57 Unlearn L: 3.0718 - Rest L: 0.0150
+Attack Confidence: 1.00 - Normal Acc: 0.63 Attack Loss: 0.00 - Normal Loss: 1.28
+
+1/1 [==============================] - 0s 13ms/step
+8/8 [==============================] - 0s 4ms/step
+Unlearn ACC: 0.01 - Rest ACC: 1.00
+76 Unlearn L: 3.2411 - Rest L: 0.0096
+Attack Confidence: 0.99 - Normal Acc: 0.55 Attack Loss: 0.01 - Normal Loss: 1.82
+
+"WRONG"
+********************************************************************************
+Current Backdoor Ratio: 0.019, consist 1.000 of all backdoor, 25244 images
+Rest Backdoor Ratio: 0.0000, consist 0.0000 of all backdoor
+8/8 [==============================] - 0s 5ms/step
+8/8 [==============================] - 0s 4ms/step
+1/1 [==============================] - 0s 14ms/step
+8/8 [==============================] - 0s 5ms/step
+1/1 [==============================] - 0s 14ms/step
+8/8 [==============================] - 0s 4ms/step
+Unlearn ACC: 1.00 - Rest ACC: 0.99
+0 Unlearn L: 10.0402 - Rest L: 0.0383
+Attack Confidence: 1.00 - Normal Acc: 0.88 Attack Loss: 0.00 - Normal Loss: 0.42
+
+1/1 [==============================] - 0s 13ms/step
+8/8 [==============================] - 0s 4ms/step
+Unlearn ACC: 0.98 - Rest ACC: 0.99
+19 Unlearn L: 7.9785 - Rest L: 0.0365
+Attack Confidence: 1.00 - Normal Acc: 0.88 Attack Loss: 0.00 - Normal Loss: 0.42
+
+1/1 [==============================] - 0s 13ms/step
+8/8 [==============================] - 0s 4ms/step
+Unlearn ACC: 0.92 - Rest ACC: 0.98
+38 Unlearn L: 4.9439 - Rest L: 0.0386
+Attack Confidence: 0.76 - Normal Acc: 0.86 Attack Loss: 0.27 - Normal Loss: 0.54
+
+1/1 [==============================] - 0s 14ms/step
+8/8 [==============================] - 0s 4ms/step
+Unlearn ACC: 0.21 - Rest ACC: 0.98
+57 Unlearn L: 3.2180 - Rest L: 0.0586
+Attack Confidence: 0.26 - Normal Acc: 0.53 Attack Loss: 1.34 - Normal Loss: 1.20
+
+1/1 [==============================] - 0s 15ms/step
+8/8 [==============================] - 0s 4ms/step
+Unlearn ACC: 0.01 - Rest ACC: 0.99
+76 Unlearn L: 3.2956 - Rest L: 0.0493
+Attack Confidence: 0.18 - Normal Acc: 0.45 Attack Loss: 1.71 - Normal Loss: 1.73
+
+correct BAD
+DONE, added: 50000
+********************************************************************************
+Final Traceback Results: Precision = 0.0098 | Recall = 1.0000
+DONE
